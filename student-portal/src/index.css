@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* A nice vibrant gradient background to make the glass effect pop */
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  min-height: 100vh;
+  
+  /* Strict native app behavior */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; 
+}
+
+input, textarea { user-select: auto; }
+
+/* The Glassmorphism Card Container */
+.glass-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 25px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Stylish Buttons for Classes and Students */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.glass-btn:active {
+  transform: scale(0.98);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.back-btn {
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Exam Banners */
+.exam-banner {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+/* --- CBT Simulator Styles --- */
+.h-dvh { height: 100dvh; }
+.safe-pb { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+
+.q-btn { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ccc; cursor: pointer; transition: all 0.2s; margin: auto; }
+.status-nv { background: white; color: black; }
+.status-na { background: #ef4444; color: white; border-radius: 12px 12px 0 0; border-color: #ef4444; }
+.status-ans { background: #22c55e; color: white; border-radius: 0 0 12px 12px; border-color: #22c55e; }
+.status-mr { background: #a855f7; color: white; border-radius: 50%; border-color: #a855f7; }
+.status-amr { background: #a855f7; color: white; border-radius: 50%; border-color: #a855f7; position: relative; }
+.status-amr::after { content: ''; position: absolute; bottom: 2px; right: 2px; width: 10px; height: 10px; background: #22c55e; border-radius: 50%; border: 1.5px solid white; }
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
