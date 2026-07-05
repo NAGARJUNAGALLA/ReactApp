@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 const EXAM_DATA = {
   title: "National Eligibility Simulator 2026",
-  durationMinutes: 45,
-  candidateName: "John Doe",
+  durationMinutes: 20,
+  candidateName: "JCV STUDY HUB",
   candidateId: "CAND-102938",
   sections: [
     { id: "gk", name: "General Knowledge", start: 0, end: 4 },
@@ -11,7 +11,7 @@ const EXAM_DATA = {
     { id: "reasoning", name: "Logical Reasoning", start: 10, end: 14 }
   ],
   questions: [
-    { text: "Who was the first President of India?", options: ["Zakir Husain", "Rajendra Prasad", "V. V. Giri", "S. Radhakrishnan"], correct: 1 },
+    { text: "If the roots of $x^2 - 4x - k= 0 , then value of k is : ", options: ["Zakir Husain", "Rajendra Prasad", "V. V. Giri", "S. Radhakrishnan"], correct: 1 },
     { text: "What is the capital of Australia?", options: ["Sydney", "Melbourne", "Canberra", "Perth"], correct: 2 },
     { text: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], correct: 1 },
     { text: "What is the SI unit of electric current?", options: ["Volt", "Ampere", "Ohm", "Watt"], correct: 1 },
@@ -20,7 +20,7 @@ const EXAM_DATA = {
     { text: "If $x^2 + 5x + 6 = 0$, what are the roots of the equation?", options: ["-2, -3", "2, 3", "1, 6", "-1, -6"], correct: 0 },
     { text: "What is the value of $\\sin^2\\theta + \\cos^2\\theta$?", options: ["0", "1", "-1", "$\\tan\\theta$"], correct: 1 },
     { text: "Evaluate the limit: $\\lim_{x \\to 0} \\frac{\\sin x}{x}$", options: ["0", "1", "$\\infty$", "Undefined"], correct: 1 },
-    { text: "According to Euler's identity, what is the value of $e^{i\\pi} + 1$?", options: ["0", "1", "$e$", "$\\pi$"], correct: 0 },
+    { text: "Accoprding to Euler's identity, what is the value of $e^{i\\pi} + 1$?", options: ["0", "1", "$e$", "$\\pi$"], correct: 0 },
     { text: "Find the odd one out: Apple, Banana, Carrot, Mango", options: ["Apple", "Carrot", "Banana", "Mango"], correct: 1 },
     { text: "If 'CAT' is coded as 'DBU', how is 'DOG' coded?", options: ["EPH", "EPI", "EPJ", "FPH"], correct: 0 },
     { text: "Which is the longest river in the world?", options: ["Nile", "Amazon", "Yangtze", "Mississippi"], correct: 0 },
