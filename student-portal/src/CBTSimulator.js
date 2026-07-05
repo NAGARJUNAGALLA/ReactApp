@@ -11,7 +11,7 @@ const EXAM_DATA = {
     { id: "reasoning", name: "Logical Reasoning", start: 10, end: 14 }
   ],
   questions: [
-    { text: "If the roots of $x^2 - 4x - k= 0 , then value of k is : ", options: ["Zakir Husain", "Rajendra Prasad", "V. V. Giri", "S. Radhakrishnan"], correct: 1 },
+    { text: "If the roots of $x^2 - 4x - k= 0$ , then value of k is : ", options: ["Zakir Husain", "Rajendra Prasad", "V. V. Giri", "S. Radhakrishnan"], correct: 1 },
     { text: "What is the capital of Australia?", options: ["Sydney", "Melbourne", "Canberra", "Perth"], correct: 2 },
     { text: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], correct: 1 },
     { text: "What is the SI unit of electric current?", options: ["Volt", "Ampere", "Ohm", "Watt"], correct: 1 },
